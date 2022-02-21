@@ -32,6 +32,11 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
 
+# Include Prebuilt kernel
+TARGET_PREBUILT_KERNEL := kernel/xiaomi/onclite/zImage
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):kernel
+	
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
