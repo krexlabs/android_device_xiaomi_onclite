@@ -33,7 +33,7 @@ TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
 
 # Include Prebuilt kernel
-TARGET_PREBUILT_KERNEL := kernel/xiaomi/onclite/zImage
+TARGET_PREBUILT_KERNEL := kernel/xiaomi/onclite/Image.gz-dtb
 PRODUCT_COPY_FILES += \
 	$(TARGET_PREBUILT_KERNEL):kernel
 	
